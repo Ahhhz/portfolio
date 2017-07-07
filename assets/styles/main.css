@@ -98,7 +98,6 @@
 	}
 
 	.icons {
-	  cursor: default;
 	  padding-left: 0;
 	  margin-top: -0.675em;
 	}
@@ -220,4 +219,8 @@
 	.about{
 		padding:5% 3% 0%;
 		position: absolute;
+	}
+
+	.arrow{
+		padding:50% 10%;
 	}
