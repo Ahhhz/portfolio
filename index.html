@@ -10,48 +10,58 @@
 	<body class="breathingAnimation">
 
 		<!-- Wrapper -->
-			<div id="wrapper" class="is-loading">
+			<div id="wrapper">
 
 				<video muted autoplay loop class="breathingAnimation">
 						<source src="./assets/video/breathinganimation.mp4" type="video/mp4">
 				</video>
 
-				<nav id="nav" class="icons">
-
+				<nav>
+					<ul class="icons">
 					<li><a href="#me" class="icon fa-home active"><span>Home</span></a></li>
 					<li><a href="#work" class="icon fa-folder"><span>Work</span></a></li>
 					<li><a href="#contact" class="icon fa-envelope"><span>Contact</span></a></li>
-					<li><a href="#" class="icon fa-twitter"><span>Twitter</span></a></li>
+					</ul>
 					</nav>
 
 				<!-- Main -->
-					<section id="main">
+					<div class="main" id="flex-container">
 						<!-- <header>
 							<div class="avatar"><img src="./assets/images/avatar.jpg" alt="" /></div>
 							<h1>Oswaldo Arevalo</h1>
 							<p>HERE IS SOME STUFF</p>
 						</header> -->
-						<div class="flex-container">
-						<article class="box-1">
-								<header class="text">
+						<!-- <div> -->
+						<div class="box-1">
+								<header class="about">
 									<h1>Oswaldo Arevalo</h1>
 									<p>Full Stack Developer</p>
+									<ul class="icons">
+										<li><a href="https://github.com/Ahhhz" class="fa-github">Github</a></li>
+										<li><a href="https://www.linkedin.com/in/oswaldo-arevalo/" class="fa-linkedin">LinkedIn</a></li>
+									</ul>
 								</header>
-								</article>
+							</div>
+
 								<div class="box-2">
-									<span class="arrow icon fa-chevron-right"><span>See my work</span></span>
+									<!-- <div class="avatar"> -->
+										<a href="#work" class="jumplink pic">
+									<span class="arrow icon fa-chevron-right">
+										<span>
+											See my work
+									</span>
+
+									</span>
 									<img src="./assets/images/avatar.jpg" alt="" />
 								</a>
-							</div>
+										<!-- <img src="./assets/images/avatar.jpg" alt="" /> -->
+
+									<!-- </div> -->
+									<!-- <img src="./assets/images/avatar.jpg" alt="" /> -->
 								</div>
-						<footer>
-							<ul class="icons">
-								<li><a href="https://github.com/Ahhhz" class="fa-github">Github</a></li>
-								<li><a href="https://www.linkedin.com/in/oswaldo-arevalo/" class="fa-linkedin">LinkedIn</a></li>
-								<!-- <li><a href="#" class="fa-facebook">Facebook</a></li> -->
-							</ul>
-						</footer>
-					</section>
+
+						<!-- </div> -->
+					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
