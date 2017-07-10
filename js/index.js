@@ -17,7 +17,7 @@
     window.addEventListener('keydown',(e) =>{
       const {keyCode} = e
       console.log(keyCode);
-      (keyCode === 27) ? workMenu.style.display = 'none' :  workMenu.style.display = 'none'
+      (keyCode !== 27) ? workMenu.style.display = 'none' :  workMenu.style.display = 'none'
 
     })
 
