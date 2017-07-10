@@ -87,7 +87,7 @@
     var keyCode = e.keyCode;
 
     console.log(keyCode);
-    keyCode === 27 ? workMenu.style.display = 'none' : workMenu.style.display = 'flex';
+    keyCode === 27 ? workMenu.style.display = 'none' : workMenu.style.display = 'none';
   });
 })();
 
