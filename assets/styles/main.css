@@ -144,42 +144,41 @@
 	}
 	/****NAV*****/
 
-
 	@keyframes bounce {
-	15% {
-  transform:translateY(0);
-}
-30% {
-  transform:translateY(-50%);
-}
-40% {
-  	transform:translateY(0%);
-}
-50% {
-  transform:translateY(-30%);
-}
-70% {
-    transform:translateY(0%);
-}
-80% {
-  transform:translateY(-15%);
-}
-90% {
-  transform:translateY(0%);
-}
-95% {
-  transform:translateY(-7%);
-}
-97% {
-  transform:translateY(0%);
-}
-99% {
-  transform:translateY(-3%);
-}
-100% {
-  transform:translateY(0);
-  opacity: 1;
-}
+	  15% {
+	    transform: translateY(0);
+	  }
+	  30% {
+	    transform: translateY(-50%);
+	  }
+	  40% {
+	    transform: translateY(0%);
+	  }
+	  50% {
+	    transform: translateY(-30%);
+	  }
+	  70% {
+	    transform: translateY(0%);
+	  }
+	  80% {
+	    transform: translateY(-15%);
+	  }
+	  90% {
+	    transform: translateY(0%);
+	  }
+	  95% {
+	    transform: translateY(-7%);
+	  }
+	  97% {
+	    transform: translateY(0%);
+	  }
+	  99% {
+	    transform: translateY(-3%);
+	  }
+	  100% {
+	    transform: translateY(0);
+	    opacity: 1;
+	  }
 	}
 
 	a {
@@ -326,46 +325,47 @@
 	  align-items: flex-end;
 	}
 
-	.project-container {
-	  display: flex;
-	  align-items: center;
-	  flex-direction: column;
+	.projectOne {
+	  background-color: blue;
+	  margin: inherit;
 	}
 
-	.project-wrapper {
-	  background-color: red;
-	  position: relative;
-	  max-width: 1000px;
-	  margin: 0 auto;
+	.projectTwo {
+	  background-color: black;
+	  margin: inherit;
 	}
 
-	.work-menu {
+	.projects {
+	  margin: 5%;
+	}
+
+	.flex-work-menu {
 	  position: fixed;
 	  width: 100%;
 	  height: 100%;
 	  top: 0;
 	  right: 0;
-	  /*background-color: #E6E6E6;*/
+	  left: 2.5%;
+	  background-color: #E6E6E6;
 	}
 
 	.js-open {
-	  position: absolute;
-	  top: 0;
-	  right: 0;
-	  width: 100%;
-	  height: 100%;
 	  z-index: 9999;
 	  background-color: #9BD475;
-		display: block;
-		animation: layerin 0.4s cubic-bezier(0.13, 0.37, 0.24, 1);
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  animation: layerin 0.4s cubic-bezier(0.13, 0.37, 0.24, 1);
 	  transform: translate(100% 0);
 	}
-
-
 
 	@keyframes layerin {
 	  from {
 	    opacity: 0;
 	    transform: translate3d(100px, 0, 0);
 	  }
+	}
+
+	.port {
+	  align-self: center;
 	}

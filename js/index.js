@@ -1,6 +1,6 @@
 (function() {
   const showWork = document.querySelector('.work')
-  const workMenu = document.querySelector('.work-menu')
+  const workMenu = document.querySelector('.flex-work-menu')
 
 
   function effect (e) {
@@ -13,7 +13,7 @@
 
      function closeScreen (e) {
        const {keyCode} = e
-       keyCode === 27 ? workMenu.classList.remove('js-open'): workMenu.classList.add('close') ;
+       keyCode === 27 ? workMenu.classList.remove('js-open'): workMenu.classList.add('js-close') ;
      }
 
      showWork.addEventListener('click', effect)
