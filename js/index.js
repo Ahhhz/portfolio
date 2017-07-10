@@ -4,11 +4,11 @@
 
 
   function effect (e) {
-       // to get the correct effect
+   
        console.log(e,workMenu);
       const {target} = e
       const effect = target.getAttribute('data-effect');
-       // adding the effects
+
        workMenu.classList.toggle(effect);
        workMenu.classList.toggle('js-open');
      }
