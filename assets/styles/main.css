@@ -334,17 +334,24 @@
 /* WORKS */
 	.projectOne {
 	  background-color: #90C3C8;
-	  margin: inherit;
+		display: flex;
+		justify-content: space-around;
 	}
 
 	.projectTwo {
 	  background-color: #759FBC;
-	  margin: inherit;
+		display: flex;
+		justify-content: space-around;
 	}
 
 	.projects {
-	  margin: 5%;
-		padding-bottom: 10%;
+		margin: 2.5%;
+		width:88%;
+		padding:1%;
+	}
+
+	.projectFinal{
+		flex:1;
 	}
 
 	.flex-work-menu {
@@ -389,4 +396,12 @@
 		color: #726E75;
 		transition: 0.2s 0.5s ease;
 		transform: rotate(180deg);
+	}
+
+	.instaGif{
+		padding:1%;
+	}
+
+	.summary{
+		align-self: baseline;
 	}
