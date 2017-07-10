@@ -4,7 +4,6 @@
 
 
   function effect (e) {
-       console.log(e,workMenu);
       const {target} = e
       const effect = target.getAttribute('data-effect');
        workMenu.classList.toggle(effect);
@@ -13,9 +12,16 @@
 
      function closeScreen (e) {
        const {keyCode} = e
-       keyCode === 27 ? workMenu.classList.remove('js-open'): workMenu.classList.add('js-close') ;
+       console.log(e);
+      // const {27} = keyCode
+       keyCode  ?  workMenu.classList.remove('js-open') : false
+
      }
 
+    //  window.addEventListener('click',(e)=>{
+    //   const {clientX} = e
+    //   clientX < 37  ? closeScreen() : false
+    //  })
      showWork.addEventListener('click', effect)
      showWork.addEventListener('keydown', closeScreen)
 })();

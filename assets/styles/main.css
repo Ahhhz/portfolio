@@ -326,12 +326,12 @@
 	}
 
 	.projectOne {
-	  background-color: blue;
+	  background-color: #90C3C8;
 	  margin: inherit;
 	}
 
 	.projectTwo {
-	  background-color: black;
+	  background-color: #759FBC;
 	  margin: inherit;
 	}
 
@@ -346,12 +346,11 @@
 	  top: 0;
 	  right: 0;
 	  left: 2.5%;
-	  background-color: #E6E6E6;
 	}
 
 	.js-open {
 	  z-index: 9999;
-	  background-color: #9BD475;
+	  background-color: #9D91A3;
 	  display: flex;
 	  flex-direction: column;
 	  justify-content: center;
@@ -366,6 +365,18 @@
 	  }
 	}
 
-	.port {
+	.header {
 	  align-self: center;
 	}
+
+	button{
+		border:none;
+		cursor: pointer;
+		background-color: #9D91A3;
+		outline: none;
+		align-self: flex-start;
+	}
+
+	/*.closed{
+		visibility: hidden;
+	}*/
