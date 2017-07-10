@@ -71,6 +71,7 @@
 
 
 (function () {
+
   var showWork = document.querySelector('.work');
   var workMenu = document.querySelector('.js-open');
   var home = document.querySelector('.js-btn');
@@ -83,11 +84,12 @@
     workMenu.style.display = 'none';
   });
 
-  window.addEventListener('keydown', function (e) {
-    var keyCode = e.keyCode;
+  addEventListener('keydown', function (e) {
+    var which = e.which;
 
-    console.log(keyCode);
-    keyCode !== 27 ? workMenu.style.display = 'none' : workMenu.style.display = 'none';
+    if (which === 27) {
+      workMenu.style.display = 'none';
+    }
   });
 })();
 

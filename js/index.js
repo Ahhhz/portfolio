@@ -1,11 +1,12 @@
 (function() {
+
     const showWork = document.querySelector('.work')
     const workMenu = document.querySelector('.js-open')
     const home = document.querySelector('.js-btn')
 
 
 
-    showWork.addEventListener('click',(e)=>{
+    showWork.addEventListener('click',(e) =>{
       workMenu.style.display = 'flex'
     })
 
@@ -14,12 +15,14 @@
 
     })
 
-    window.addEventListener('keydown',(e) =>{
-      const {keyCode} = e
-      console.log(keyCode);
-      (keyCode !== 27) ? workMenu.style.display = 'none' :  workMenu.style.display = 'none'
 
-    })
+
+    addEventListener('keydown', (e) =>{
+      const{which} = e
+        if(which === 27){
+         workMenu.style.display = 'none'
+        }
+     })
 
 
 })();
