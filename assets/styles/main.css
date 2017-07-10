@@ -348,10 +348,11 @@
 	  left: 2.5%;
 	}
 
-	.js-open {
+
+	.js-open{
 	  z-index: 9999;
 	  background-color: #9D91A3;
-	  display: flex;
+	  display: none;
 	  flex-direction: column;
 	  justify-content: center;
 	  animation: layerin 0.4s cubic-bezier(0.13, 0.37, 0.24, 1);
